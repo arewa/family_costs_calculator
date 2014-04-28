@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Family Costs Calculator</string>
+    
+    <string-array name="month_names">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </string-array>
+    
+    <string name="month_year_title">Месяц и Год</string>
+    <string name="cost_title">Затраты</string>
+    <string name="plan_title">План</string>
+    <string name="fact_title">Факт</string>
+    <string name="total_title">Всего</string>
+    <string name="income_title">Доход</string>
+    <string name="balance_title">Баланс</string>
+    <string name="save_title">Экономия</string>
+    <string name="add_new_cost_menu_title">Добавить Затраты</string>
+    <string name="set_income_amount_menu_title">Доход</string>
+    <string name="set_save_amount_menu_title">Экономия</string>
+    <string name="change_month_menu_title">Месяц</string>
+    <string name="app_add_new_cost">Family Costs Calculator: Добавить</string>
+    <string name="app_edit_cost">Family Costs Calculator: Редактировать</string>
+    <string name="cost_description_hint">Описание расхода</string>
+    <string name="plan_amount_hint">План сумма</string>
+    <string name="fact_amount_hint">Факт сумма</string>
+    <string name="save_hint">Сохранить</string>
+    <string name="income_amount_description_hint">Сумма дохода</string>
+    <string name="app_set_income_amount">Family Costs Calculator: Сумма Дохода</string>
+    <string name="save_amount_description_hint">Экономия</string>
+    <string name="app_set_save_amount">Family Costs Calculator: Сумма Экономии</string>
+    <string name="app_change_month">Family Costs Calculator: Месяц</string>
+    
+    <string name="eula_title">Лицензия</string>
+	<string name="eula_accept">Принять</string>
+	<string name="eula_refuse">Отклонить</string>
+
+</resources>

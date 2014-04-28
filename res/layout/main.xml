@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="0"
+    android:padding="2dip">
+
+    <TableRow android:background="#FF909090">
+
+        <TextView
+            android:id="@+id/month_year_title"
+            android:layout_marginBottom="1dip"
+            android:layout_span="5"
+            android:background="#000000"
+            android:gravity="right"
+            android:text="@string/month_year_title"
+            android:textSize="30dip"
+            android:height="40dip"/>
+
+    </TableRow>
+  
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="horizontal|vertical">
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:fillViewport="true">		
+	        <TableLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:stretchColumns="0"
+				android:id="@+id/mainLayout">
+			</TableLayout>
+		</HorizontalScrollView>
+    </ScrollView>
+</TableLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Family Costs Calculator</string>
+    
+    <string-array name="month_names">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    
+    <string name="month_year_title">Month Year</string>
+    <string name="cost_title">Cost</string>
+    <string name="plan_title">Plan</string>
+    <string name="fact_title">Fact</string>
+    <string name="total_title">Total</string>
+    <string name="income_title">Income</string>
+    <string name="balance_title">Balance</string>
+    <string name="save_title">Save</string>
+    <string name="add_new_cost_menu_title">Add New Cost</string>
+    <string name="set_income_amount_menu_title">Set Income Amount</string>
+    <string name="set_save_amount_menu_title">Set Save Amount</string>
+    <string name="change_month_menu_title">Change Month</string>
+    <string name="app_add_new_cost">Family Costs Calculator: Add New Cost</string>
+    <string name="app_edit_cost">Family Costs Calculator: Edit Cost</string>
+    <string name="cost_description_hint">Cost description</string>
+    <string name="plan_amount_hint">Plan amount</string>
+    <string name="fact_amount_hint">Fact amount</string>
+    <string name="save_hint">Save</string>
+    <string name="income_amount_description_hint">Income amount</string>
+    <string name="app_set_income_amount">Family Costs Calculator: Set Income Amount</string>
+    <string name="save_amount_description_hint">Save amount</string>
+    <string name="app_set_save_amount">Family Costs Calculator: Set Save Amount</string>
+    <string name="app_change_month">Family Costs Calculator: Change Month</string>
+    
+    <string name="eula_title">License</string>
+	<string name="eula_accept">Accept</string>
+	<string name="eula_refuse">Refuse</string>
+
+</resources>

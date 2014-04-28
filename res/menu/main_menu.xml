@@ -1,0 +1,7 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/add_new_cost" android:title="@string/add_new_cost_menu_title" android:icon="@drawable/ic_menu_plus"></item>
+        <item android:id="@+id/set_income_amount" android:title="@string/set_income_amount_menu_title" android:icon="@drawable/ic_menu_income"></item><item android:id="@+id/set_save_amount" android:icon="@drawable/ic_menu_save" android:title="@string/set_save_amount_menu_title"></item><item android:id="@+id/change_month" android:title="@string/change_month_menu_title" android:icon="@drawable/ic_menu_settings"></item>
+        
+        
+    </menu>
