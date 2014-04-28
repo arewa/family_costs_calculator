@@ -2,12 +2,12 @@ package com.fcc.model;
 
 public class Cost {
 	private int rowid = 0;
-	private String name = "";
+	private String title = "";
 	private double plan = 0;
 	private double fact = 0;
 	
 	public Cost(String name, double plan, double fact) {
-		this.name = name;
+		this.title = name;
 		this.plan = plan;
 		this.fact = fact;
 	}
@@ -24,11 +24,11 @@ public class Cost {
 	public void setRowid(int rowid) {
 		this.rowid = rowid;
 	}
-	public String getName() {
-		return name;
+	public String getTitle() {
+		return title;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public double getPlan() {
 		return plan;

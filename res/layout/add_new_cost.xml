@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="2dip" 
-    android:stretchColumns="*">
-
-    <TableRow>
-		<EditText
-		    android:layout_span="2"
-			android:id="@+id/cost_description"
-			android:hint="@string/cost_description_hint" >
-			
-			<requestFocus />
-		</EditText>
-    </TableRow>
-
-    <TableRow>
-
-		<EditText
-		    android:id="@+id/plan_amount"
-		    android:hint="@string/plan_amount_hint"
-		    android:inputType="numberDecimal" >
-
-		</EditText>
-
-		<EditText
-		    android:id="@+id/fact_amount"
-		    android:hint="@string/fact_amount_hint"
-		    android:inputType="numberDecimal" >
-
-		</EditText>
-    </TableRow>
+    android:padding="0dip">
     
-     <TableRow>
-		<Button
-		    android:layout_span="2"
-	        android:id="@+id/save_button"
-	        android:text="@string/save_hint" />
-    </TableRow>
+    <EditText
+		android:id="@+id/costTitle"
+		android:hint="@string/cost_title_hint" 
+		android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<requestFocus />
+	</EditText>
+	
+    <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/costTitle"
+	    android:stretchColumns="*"
+	    android:id="@+id/amountsRow">
+		<TableRow>
+		    <EditText
+			    android:id="@+id/planAmount"
+			    android:hint="@string/plan_amount_hint"
+			    android:inputType="numberDecimal">
+			</EditText>
+			
+		    <EditText
+			    android:id="@+id/factAmount"
+			    android:hint="@string/fact_amount_hint"
+			    android:inputType="numberDecimal">
+			</EditText>
+		</TableRow>
+	</TableLayout>
+	
+    <Button
+        android:id="@+id/buttonSave"
+        android:text="@string/save_hint" 
+        android:layout_below="@id/amountsRow"
+		android:layout_centerHorizontal="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
 
-</TableLayout>
+</RelativeLayout>

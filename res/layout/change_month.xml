@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="2dip" 
-    android:stretchColumns="*">
+    android:padding="0dip" >
+    
+    <com.mobfox.sdk.MobFoxView
+			android:layout_width="320dp" 
+			android:layout_height="50dp" 
+			android:id="@+id/imAdview3" 
+			mode="live" 
+			publisherId="ef961f7587c2dda2b2e127914a7d176d"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"/>
+    
+    <TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/imAdview3"
+	    android:stretchColumns="*"
+	    android:id="@+id/spinner_row">
 
-    <TableRow>
-		<Spinner
-         android:id="@+id/spinner_month"/>
-		<Spinner
-         android:id="@+id/spinner_year" />
-    </TableRow>
+	    <TableRow>
+			
+	    </TableRow>
+    </TableLayout>
 
-     <TableRow>
-		<Button
-		    android:layout_span="2"
-	        android:id="@+id/save_button"
-	        android:text="@string/save_hint" />
-    </TableRow>
-</TableLayout>
+	<Button
+        android:id="@+id/save_button"
+        android:text="@string/save_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_row"/>
+</RelativeLayout>

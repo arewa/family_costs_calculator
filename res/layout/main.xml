@@ -1,38 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:stretchColumns="0"
-    android:padding="2dip">
+    android:orientation="vertical" >
 
-    <TableRow android:background="#FF909090">
-
-        <TextView
-            android:id="@+id/month_year_title"
-            android:layout_marginBottom="1dip"
-            android:layout_span="5"
-            android:background="#000000"
-            android:gravity="right"
-            android:text="@string/month_year_title"
-            android:textSize="30dip"
-            android:height="40dip"/>
-
-    </TableRow>
-  
-    <ScrollView
+    <ListView
+        android:id="@+android:id/list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:scrollbars="horizontal|vertical">
-        <HorizontalScrollView
-            android:layout_width="fill_parent"
-        	android:layout_height="wrap_content"
-        	android:fillViewport="true">		
-	        <TableLayout
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:stretchColumns="0"
-				android:id="@+id/mainLayout">
-			</TableLayout>
-		</HorizontalScrollView>
-    </ScrollView>
-</TableLayout>
+        android:layout_above="@+id/totalFact">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Balance"
+        android:textColor="@color/balance_text_color"
+        android:paddingRight="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/totalFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/balance"
+        android:text="Total fact"
+        android:paddingRight="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/totalPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalFact"
+        android:layout_alignBottom="@+id/totalFact"
+        android:layout_toLeftOf="@+id/totalFact"
+        android:text="Total plan"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="@color/plan_text_color" 
+        android:paddingRight="10dip" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/add_new_cost_button_title"
+        android:width="80dip" />
+
+    <TextView
+        android:id="@+id/currentMonthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/balance"
+        android:layout_toRightOf="@+id/buttonAdd"
+        android:paddingLeft="10dip"
+        android:text="February 2011"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

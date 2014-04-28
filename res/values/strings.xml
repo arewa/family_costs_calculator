@@ -18,6 +18,10 @@
         <item>December</item>
     </string-array>
     
+    <string name="cost_title_validation_error">Please type correct cost title</string>
+    <string name="plan_amount_validation_error">Please type correct plan amount</string>
+    <string name="fact_amount_validation_error">Please type correct fact amount</string>
+    
     <string name="month_year_title">Month Year</string>
     <string name="cost_title">Cost</string>
     <string name="plan_title">Plan</string>
@@ -27,12 +31,14 @@
     <string name="balance_title">Balance</string>
     <string name="save_title">Save</string>
     <string name="add_new_cost_menu_title">Add New Cost</string>
+    <string name="add_new_cost_dialog_title">Add New Cost</string>
+    <string name="add_new_cost_button_title">Add</string>
     <string name="set_income_amount_menu_title">Set Income Amount</string>
     <string name="set_save_amount_menu_title">Set Save Amount</string>
     <string name="change_month_menu_title">Change Month</string>
     <string name="app_add_new_cost">Family Costs Calculator: Add New Cost</string>
     <string name="app_edit_cost">Family Costs Calculator: Edit Cost</string>
-    <string name="cost_description_hint">Cost description</string>
+    <string name="cost_title_hint">Cost title</string>
     <string name="plan_amount_hint">Plan amount</string>
     <string name="fact_amount_hint">Fact amount</string>
     <string name="save_hint">Save</string>
@@ -45,5 +51,8 @@
     <string name="eula_title">License</string>
 	<string name="eula_accept">Accept</string>
 	<string name="eula_refuse">Refuse</string>
+	
+	<color name="plan_text_color">#99D9EA</color>
+	<color name="balance_text_color">#00FF00</color>
 
 </resources>

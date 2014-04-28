@@ -1,8 +1,5 @@
 package com.fcc.activity;
 
-import com.fcc.R;
-import com.fcc.db.DatabaseHelper;
-
 import android.app.Activity;
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -13,6 +10,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.fcc.R;
+import com.fcc.db.DatabaseHelper;
 
 public class SetIncomeAmountActivity extends Activity implements OnClickListener {
 
@@ -66,6 +66,12 @@ public class SetIncomeAmountActivity extends Activity implements OnClickListener
 		db.close();
 		
 		finish();
+	}
+	
+	@Override
+	protected void onDestroy() {
+		db.close();
+		super.onDestroy();
 	}
 	
 }

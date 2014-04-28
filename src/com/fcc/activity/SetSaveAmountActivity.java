@@ -68,5 +68,11 @@ public class SetSaveAmountActivity extends Activity implements OnClickListener {
 		finish();
 	}
 	
+	@Override
+	protected void onDestroy() {
+		db.close();
+		super.onDestroy();
+	}
+	
 }
 
